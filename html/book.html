@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>图书</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <script rel="script" src="../js/jquery-3.1.1.min.js"></script>
+    <script rel="script" src="../js/jquery.cookie.js"></script>
+    <link href="../css/swiper.min.css" rel="stylesheet">
+    <script rel="script" src="../js/bootstrap.min.js"></script>
+    <script rel="script" src="../js/swiper.min.js"></script>
+</head>
+<body>
+<div>
+    <!-- 头部导航栏-->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">重庆文理学院</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="jiaowu.html">教务</a></li>
+                    <li class="active"><a href="#">图书</a></li>
+                    <li><a href="personal.html">个人中心</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span id="login_text">登录</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 通知-->
+        <div class="row" style="margin-top: 20px">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        旅游产业转型升级理论与实践研究
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="../images/b1.jpg">
+                    </div>
+                    <div class="col-sm-8" style="line-height: 30px">
+                        <span style="opacity: 0.5">作者</span>易开刚主编<br>
+                        <span style="opacity: 0.5">页数</span>292<br>
+                        <span style="opacity: 0.5">出版时间</span>2017.04<br>
+                        <span style="opacity: 0.5">出版社</span>杭州：浙江工商大学出版社<br>
+                        <span style="opacity: 0.5">中图分类号</span>F592.755<br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        机械制造工艺学
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="../images/b2.jpg">
+                    </div>
+                    <div class="col-sm-8" style="line-height: 30px">
+                        <span style="opacity: 0.5">作者</span>王庆明著<br>
+                        <span style="opacity: 0.5">页数</span>195<br>
+                        <span style="opacity: 0.5">出版时间</span>2017.02<br>
+                        <span style="opacity: 0.5">出版社</span>上海：华东理工大学出版社<br>
+                        <span style="opacity: 0.5">中图分类号</span>TH16<br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        饮食文化旅游开发与设计
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="col-sm-4">
+                        <img class="img-responsive" src="../images/b3.jpg">
+                    </div>
+                    <div class="col-sm-8" style="line-height: 30px">
+                        <span style="opacity: 0.5">作者</span>冯玉珠著<br>
+                        <span style="opacity: 0.5">页数</span>329<br>
+                        <span style="opacity: 0.5">出版时间</span>2017.01<br>
+                        <span style="opacity: 0.5">出版社</span>杭州：浙江工商大学出版社<br>
+                        <span style="opacity: 0.5">中图分类号</span>F592<br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script rel="script">
+    var username = $.cookie('username');
+    if (username == '201558234098')
+    {
+        $("#login_text").text(username)
+    }
+
+</script>
+</html>

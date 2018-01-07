@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>课表</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <script rel="script" src="../js/jquery-3.1.1.min.js"></script>
+    <script rel="script" src="../js/jquery.cookie.js"></script>
+    <script rel="script" src="../js/bootstrap.min.js"></script>
+</head>
+<style>
+    #swtich_style:hover{
+        cursor: default;
+    }
+</style>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="jiaowu.html">返回</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="well" id="swtich_style">转换格式</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" id="style_1">
+            <img class="img-responsive" src="../images/k1.png">
+        </div>
+        <div class="col-sm-12" id="style_2" style="display: none">
+            <img class="img-responsive" src="../images/k2.png">
+        </div>
+    </div>
+</div>
+</body>
+<script rel="script">
+    $('#swtich_style').on('click',function(){
+        $('#style_1').toggle();
+        $('#style_2').toggle();
+    })
+</script>
+</html>

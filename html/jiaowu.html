@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>教务</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <script rel="script" src="../js/jquery-3.1.1.min.js"></script>
+    <script rel="script" src="../js/jquery.cookie.js"></script>
+    <link href="../css/swiper.min.css" rel="stylesheet">
+    <script rel="script" src="../js/bootstrap.min.js"></script>
+    <script rel="script" src="../js/swiper.min.js"></script>
+</head>
+<body>
+<div>
+    <!-- 头部导航栏-->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">重庆文理学院</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">教务</a></li>
+                    <li><a href="book.html">图书</a></li>
+                    <li><a href="personal.html">个人中心</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html"><span id="login_text">登录</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- 轮播图-->
+        <div class="row">
+            <div id="img_navbar">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/j1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/j2.jpg">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 通知-->
+        <div class="row" style="margin-top: 20px">
+            <a href="#" class="list-group-item active">
+                教务通知
+            </a>
+            <a href="#" class="list-group-item">尔雅通识教育网络课程上课网址变更通知 [2016-11-08 16:08:22]</a>
+            <a href="#" class="list-group-item">关于设置教务网络系统“重置密码设置”选项内容的温馨提示 [2016-11-07 10:03:29]</a>
+            <a href="#" class="list-group-item">关于通识教育选修课课程类别变更的说明 [2016-09-12 16:05:55]</a>
+            <a href="#" class="list-group-item">关于2015-2016学年第一学期重修报名与选课的通知 [2015-09-22 16:55:38]</a>
+            <a href="#" class="list-group-item">关于2014-2015学年第二学期重修报名与选课的通知 [2015-03-17 10:14:41]</a>
+            <a href="#" class="list-group-item">关于2014-2015学年第一学期重修报名与选课的通知 [2014-09-24 16:33:12]</a>
+            <a href="#" class="list-group-item">关于2014级学生《大学体育》选课的通知 [2014-09-23 11:18:46]</a>
+            <a href="#" class="list-group-item">关于2013-2014学年第二学期重修申请报名与选课的通知 [2014-02-28 15:10:20]</a>
+            <a href="#" class="list-group-item">关于2013-2014学年第二学期文理基础教育指导选修课补、退选的通知 [2014-02-25 09:04:14]</a>
+            <a href="#" class="list-group-item">关于《ISO9000质量管理体系》等选修课查分及办理内审员资格证的通知 [2013-12-18 10:09:46]</a>
+        </div>
+
+        <div class="row" style="margin-top: 20px">
+            <div class="well" style="text-align: center"><a style="text-decoration: none;color: black" href="kebiao.html">查看课表</a></div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script rel="script">
+    var username = $.cookie('username');
+    if (username == '201558234098')
+    {
+        $("#login_text").text(username)
+    }
+
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
+    });
+</script>
+</html>
